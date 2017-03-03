@@ -86,6 +86,10 @@ li a {
   right: 0;
   margin: auto; }
 
+/* Results Container */
+.results-container {
+  margin: 200px auto 0; }
+
 /* MODULES */
 /* Search Field */
 fieldset {

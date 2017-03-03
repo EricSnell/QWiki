@@ -13,13 +13,19 @@ $(document).ready(() => {
       dataType: 'jsonp',
       success: function(result) {
         console.log('result -->', result);
-        $(".search-container").removeClass("center").addClass("top");
+        // $(".search-container").removeClass("center").addClass("top");
+        $(".search-container").animate({ marginTop: '50px' });
         $(".results").empty();
         let results = result.query.pages;
 
-        for (var prop in results) {
-          $(".results").append("<li><a href='https://en.wikipedia.org/wiki?curid=" + results[prop].pageid + "' target='_blank'><div class='wiki-article'><h2>" + results[prop].title + "<h3><p>" + results[prop].extract + "</p></div></a></li>")
+        setTimeout(showResults, 500);
+
+        function showResults() {
+          for (var prop in results) {
+            $(".results").append("<li><a href='https://en.wikipedia.org/wiki?curid=" + results[prop].pageid + "' target='_blank'><div class='wiki-article'><h2>" + results[prop].title + "<h3><p>" + results[prop].extract + "</p></div></a></li>")
+          };
         }
+
       }
     })
     .fail((error) => {
