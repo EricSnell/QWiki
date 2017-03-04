@@ -63,13 +63,14 @@ li a {
 /* Search Container */
 .search-container {
   height: 300px;
-  max-width: 290px; }
+  max-width: 290px;
+  text-align: center; }
   .search-container fieldset {
     display: block;
     margin: 0 auto; }
   .search-container .random {
     clear: both;
-    margin-top: 20px;
+    margin: 20px 0;
     text-align: center;
     font-size: 21px; }
     .search-container .random .random-link {
@@ -90,7 +91,6 @@ li a {
 /* Logo and text */
 .logo,
 .logo-text {
-  text-align: center;
   color: #FFF; }
 
 .logo {
@@ -103,6 +103,10 @@ li a {
   font-size: 22px;
   font-weight: 100;
   margin-bottom: 20px; }
+
+/* Error message */
+.error-text {
+  color: #4DD0E1; }
 
 /* Results Container */
 .results-container {
