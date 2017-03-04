@@ -18,12 +18,16 @@ $(document).ready(() => {
         $(".results").empty();
         let results = result.query.pages;
 
-        setTimeout(showResults, 500);
+        setTimeout(showResults, 400);
 
         function showResults() {
           for (var prop in results) {
-            $(".results").append("<li><a href='https://en.wikipedia.org/wiki?curid=" + results[prop].pageid + "' target='_blank'><div class='wiki-article'><h2>" + results[prop].title + "<h3><p>" + results[prop].extract + "</p></div></a></li>")
+            $(".results").append($("<li><a href='https://en.wikipedia.org/wiki?curid=" + results[prop].pageid + "' target='_blank'><div class='wiki-article'><h2>" + results[prop].title + "<h3><p>" + results[prop].extract + "</p></div></a></li>").hide())
           };
+
+          $(".results li").each(function(i) {
+            $(this).delay(100 * i).fadeIn()
+          })
         }
 
       }
