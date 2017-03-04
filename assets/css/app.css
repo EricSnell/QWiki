@@ -157,7 +157,7 @@ button {
   margin: 20px auto;
   box-shadow: -1px 1px 5px #666;
   border-radius: 10px;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   transition: all 0.2s ease-in-out; }
   .wiki-article h2 {
     margin-bottom: 18px;
@@ -167,7 +167,7 @@ button {
     letter-spacing: -0.5px;
     transition: all 0.2s ease-in-out;
     position: relative;
-    left: 0; }
+    top: 5px; }
   .wiki-article p {
     margin-left: 20px;
     font-weight: 100;
@@ -176,10 +176,12 @@ button {
     transition: all 0.2s ease-in-out; }
   .wiki-article:hover {
     cursor: pointer;
-    border: 3px solid #4DD0E1;
-    box-shadow: 0 5px 5px #444; }
+    border: 2px solid #4DD0E1;
+    box-shadow: 0 5px 5px #444;
+    border-left: 15px solid #4dd0e1;
+    padding-left: 18px; }
   .wiki-article:hover h2 {
-    left: 8px;
+    top: 0;
     color: #222; }
   .wiki-article:hover p {
     color: #222; }
