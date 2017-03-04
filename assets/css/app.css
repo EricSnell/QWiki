@@ -62,10 +62,14 @@ li a {
 /* LAYOUT */
 /* Search Container */
 .search-container {
-  height: 100px;
-  width: 300px; }
+  height: 300px;
+  max-width: 290px; }
+  .search-container fieldset {
+    display: block;
+    margin: 0 auto; }
   .search-container .random {
-    margin-top: 10px;
+    clear: both;
+    margin-top: 20px;
     text-align: center;
     font-size: 21px; }
     .search-container .random .random-link {
@@ -83,9 +87,32 @@ li a {
   right: 0;
   margin: auto; }
 
+/* Logo and text */
+.logo,
+.logo-text {
+  text-align: center;
+  color: #FFF; }
+
+.logo {
+  font-size: 80px;
+  letter-spacing: -5px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 100;
+  margin-bottom: 20px; }
+
 /* Results Container */
 .results-container {
   margin: 200px auto 0; }
+
+/* Clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 /* MODULES */
 /* Search Field */
