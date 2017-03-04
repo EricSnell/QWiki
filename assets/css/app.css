@@ -75,9 +75,6 @@ li a {
         color: #4DD0E1; }
 
 /* Search Container positioning */
-.top {
-  margin: 50px auto; }
-
 .center {
   position: absolute;
   top: 0;
@@ -114,22 +111,19 @@ input {
   font-size: 24px;
   z-index: 2;
   border: 0 none; }
-
-input:focus {
-  outline: 0 none; }
-
-input:focus + button {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-  transition-duration: 0.3s; }
-
-input:focus + button .fa {
-  -webkit-transform: translate(0px, 0);
-  -ms-transform: translate(0px, 0);
-  transform: translate(0px, 0);
-  transition-duration: 0.3s;
-  color: #fff; }
+  input:focus {
+    outline: 0 none; }
+  input:focus + button {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    transition-duration: 0.3s; }
+  input:focus + button .fa {
+    -webkit-transform: translate(0px, 0);
+    -ms-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+    transition-duration: 0.3s;
+    color: #fff; }
 
 button {
   z-index: 1;
@@ -157,28 +151,37 @@ button {
 /* Wiki Article */
 .wiki-article {
   background: #fff;
-  max-width: 1000px;
+  max-width: 705px;
   min-height: 80px;
   padding: 30px;
   margin: 20px auto;
   box-shadow: -1px 1px 5px #666;
   border-radius: 10px;
   border: 3px solid #fff;
-  transition: all 0.1s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .wiki-article h2 {
     margin-bottom: 18px;
-    color: #333;
+    color: #777;
     font-size: 22px;
     font-weight: 700;
-    letter-spacing: -0.5px; }
+    letter-spacing: -0.5px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    left: 0; }
   .wiki-article p {
     margin-left: 20px;
-    font-weight: 300;
-    font-size: 19px; }
+    font-weight: 100;
+    font-size: 19px;
+    color: #888;
+    transition: all 0.2s ease-in-out; }
   .wiki-article:hover {
     cursor: pointer;
     border: 3px solid #4DD0E1;
-    box-shadow: 0 5px 5px #444;
-    max-width: 1010px; }
+    box-shadow: 0 5px 5px #444; }
+  .wiki-article:hover h2 {
+    left: 8px;
+    color: #222; }
+  .wiki-article:hover p {
+    color: #222; }
 
 

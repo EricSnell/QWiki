@@ -25,17 +25,17 @@ input
   z-index: 2
   border: 0 none
 
-input:focus
-  outline: 0 none
+  &:focus
+    outline: 0 none
 
-input:focus + button
-  transform: translate(0, 0)
-  transition-duration: 0.3s
+  &:focus + button
+    transform: translate(0, 0)
+    transition-duration: 0.3s
 
-input:focus + button .fa
-  transform: translate(0px, 0)
-  transition-duration: 0.3s
-  color: #fff
+  &:focus + button .fa
+    transform: translate(0px, 0)
+    transition-duration: 0.3s
+    color: #fff
 
 
 button

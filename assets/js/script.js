@@ -1,8 +1,8 @@
 $(document).ready(() => {
 
   $(".search-button").click((event) => {
-    event.preventDefault();
-    let query = $(".search-field").val();
+    event.preventDefault()
+    let query = $(".search-field").val()
     let userAgent = 'FreeCodeCamp Project https://codepen.io/ericsnell/pen/oYLBGW'
 
     // AJAX request for Wikipedia articles containing user's query
@@ -12,29 +12,29 @@ $(document).ready(() => {
       data: query,
       dataType: 'jsonp',
       success: function(result) {
-        console.log('result -->', result);
-        // $(".search-container").removeClass("center").addClass("top");
-        $(".search-container").animate({ marginTop: '50px' });
+        console.log('result -->', result)
+        $(".search-container").animate({ marginTop: '50px' })
         $(".results").empty();
-        let results = result.query.pages;
+        let results = result.query.pages
 
-        setTimeout(showResults, 400);
+        // Delays the display of articles
+        setTimeout(showResults, 400)
 
+        // Loops through results and adds each article as a list item, then fades them in in sequence
         function showResults() {
           for (var prop in results) {
             $(".results").append($("<li><a href='https://en.wikipedia.org/wiki?curid=" + results[prop].pageid + "' target='_blank'><div class='wiki-article'><h2>" + results[prop].title + "<h3><p>" + results[prop].extract + "</p></div></a></li>").hide())
-          };
+          }
 
           $(".results li").each(function(i) {
             $(this).delay(100 * i).fadeIn()
           })
         }
-
       }
     })
     .fail((error) => {
-      console.log("Error: ", error);
+      console.log("Error: ", error)
     })
-  });
+  })
 
 })
