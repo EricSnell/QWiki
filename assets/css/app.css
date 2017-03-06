@@ -1,3 +1,4 @@
+/* Variables */
 /* PLUGINS */
 /* CSS Reset */
 html, body, div, span, applet, object, iframe,
@@ -77,7 +78,7 @@ li a {
       color: #FFF;
       text-decoration: none; }
       .search-container .random .random-link:hover {
-        color: #4DD0E1; }
+        color: #29abe2; }
 
 /* Search Container positioning */
 .center {
@@ -153,7 +154,7 @@ input {
     -webkit-transform: translate(0px, 0);
     -ms-transform: translate(0px, 0);
     transform: translate(0px, 0);
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     color: #fff; }
 
 button {
@@ -207,9 +208,9 @@ button {
     transition: all 0.2s ease-in-out; }
   .wiki-article:hover {
     cursor: pointer;
-    border: 2px solid #4DD0E1;
+    border: 2px solid #29abe2;
     box-shadow: 0 5px 5px #444;
-    border-left: 15px solid #4dd0e1;
+    border-left: 10px solid #29abe2;
     padding-left: 18px; }
   .wiki-article:hover h2 {
     top: 0;
