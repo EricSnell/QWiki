@@ -76,7 +76,8 @@ li a {
     font-size: 21px; }
     .search-container .random .random-link {
       color: #FFF;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: all 0.2s ease-in-out; }
       .search-container .random .random-link:hover {
         color: #29abe2; }
 
