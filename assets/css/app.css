@@ -111,7 +111,8 @@ li a {
 
 /* Results Container */
 .results-container {
-  margin: 300px auto 0; }
+  margin: 300px auto 0;
+  padding: 0 20px; }
 
 /* Clearfix */
 .clearfix:after {
