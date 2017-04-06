@@ -197,9 +197,7 @@ button {
     font-size: 22px;
     font-weight: 700;
     letter-spacing: -0.5px;
-    transition: all 0.2s ease-in-out;
-    position: relative;
-    top: 5px; }
+    transition: all 0.2s ease-in-out; }
   .wiki-article p {
     margin-left: 20px;
     font-weight: 100;
@@ -208,12 +206,9 @@ button {
     transition: all 0.2s ease-in-out; }
   .wiki-article:hover {
     cursor: pointer;
-    border: 2px solid #29abe2;
-    box-shadow: 0 5px 5px #444;
-    border-left: 10px solid #29abe2;
-    padding-left: 18px; }
+    border: 2px solid #333;
+    box-shadow: 0 5px 5px #444; }
   .wiki-article:hover h2 {
-    top: 0;
     color: #222; }
   .wiki-article:hover p {
     color: #222; }
